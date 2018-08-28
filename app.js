@@ -1,5 +1,5 @@
 //here goes your json of operations
-const maker = [{"result":0,"operator":"AND"},{"result":1,"operator":"OR"},{"result":1,"operator":"OR"},{"result" : 0, "operator" : 'OR'}]
+const maker = [{"result":1,"operator":"AND"},{"result":0,"operator":"OR"},{"result":1,"operator":"OR"},{"result" : 1, "operator" : 'OR'}]
 //stores our operations
 let ss = ''
 //go through each data set
@@ -30,7 +30,7 @@ maker.forEach((data,index)=>{
 //lets evaluate through the opeation and get the data
 const result = eval(ss)
 //it will have value either 1 or 0 
-if(result == 1){
+if(result!=0){
 	console.log(true)
 }
 else{
